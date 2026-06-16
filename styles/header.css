@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.875rem;
+}
+
+
+
+@media (width >= 80em) {
+  header {
+    margin-block: 1.5625rem 1.625rem;
+  }
+}

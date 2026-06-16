@@ -1,3 +1,18 @@
-.link {
-  font: var(--link);
+.desktop-only {
+  display: none;
 }
+
+.button-add {
+  background-color: var(--color-brand);
+
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: initial;
+  }
+}
+
