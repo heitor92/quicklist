@@ -10,6 +10,11 @@
   }
 }
 
+.message-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 @media (width >= 80em) {
   .desktop-only {
     display: initial;

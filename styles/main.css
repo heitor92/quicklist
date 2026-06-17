@@ -6,7 +6,7 @@ main {
     margin-block: 1rem 2.75rem;
   }
 
-  & > div:nth-of-type(1) {
+  & > form {
     display: grid;
     grid-template-areas: "input" "button";
     gap: 1rem;
@@ -21,7 +21,7 @@ main {
     }
   }
 
-  & > div:nth-of-type(2) {
+  & > #notification {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,6 +30,7 @@ main {
     color: var(--always-white);
     padding-inline: 0.75rem;
     border-radius: 0.75rem;
+    transition: opacity 0.3s, visibility 0.3s;
 
     & > div {
       display: flex;
@@ -103,7 +104,7 @@ main {
 
 @media (width >= 80em) {
   main {
-    & > div:nth-of-type(1) {
+    & > form {
       grid-template-areas: "input input button";
     }
   }
